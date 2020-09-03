@@ -1,0 +1,43 @@
+$scale: 5;
+
+$min-margin: 5;
+$max-margin: 100;
+
+@if $min-margin > 0 {
+  $unscaled-min: $min-margin / $scale;
+  $unscaled-max: $max-margin / $scale;
+
+  @for $i from $unscaled-min through $unscaled-max {
+    .m-top-#{$i} {
+      margin-top: #{$i * $scale}px;
+    }
+
+    .m-right-#{$i} {
+      margin-right: #{$i * $scale}px;
+    }
+
+    .m-bottom-#{$i} {
+      margin-bottom: #{$i * $scale}px;
+    }
+
+    .m-left-#{$i} {
+      margin-left: #{$i * $scale}px;
+    }
+  }
+}
+
+.m-top-0 {
+  margin-top: 0;
+}
+
+.m-right-0 {
+  margin-right: 0;
+}
+
+.m-bottom-0 {
+  margin-bottom: 0;
+}
+
+.m-left-0 {
+  margin-left: 0;
+}

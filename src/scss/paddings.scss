@@ -1,0 +1,47 @@
+$scale: 2;
+
+$min-padding: 2;
+$max-padding: 40;
+
+@if $min-padding > 0 {
+  $unscaled-min: $min-padding / $scale;
+  $unscaled-max: $max-padding / $scale;
+
+  @for $i from $unscaled-min through $unscaled-max {
+    .p-#{$i} {
+      padding: #{$i * $scale}px;
+    }
+
+    .p-top-#{$i} {
+      padding-top: #{$i * $scale}px;
+    }
+
+    .p-right-#{$i} {
+      padding-right: #{$i * $scale}px;
+    }
+
+    .p-bottom-#{$i} {
+      padding-bottom: #{$i * $scale}px;
+    }
+
+    .p-left-#{$i} {
+      padding-left: #{$i * $scale}px;
+    }
+  }
+}
+
+.p-top-0 {
+  padding-top: 0;
+}
+
+.p-right-0 {
+  padding-right: 0;
+}
+
+.p-bottom-0 {
+  padding-bottom: 0;
+}
+
+.p-left-0 {
+  padding-left: 0;
+}
