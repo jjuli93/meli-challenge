@@ -1,7 +1,7 @@
-$scale: 5;
+$scale: 4;
 
-$min-margin: 5;
-$max-margin: 100;
+$min-margin: 4;
+$max-margin: 80;
 
 @if $min-margin > 0 {
   $unscaled-min: $min-margin / $scale;

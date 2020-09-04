@@ -1,0 +1,18 @@
+@import 'variables/colors';
+
+$border-radius: 3px;
+
+.input {
+  border-radius: $border-radius 0 0 $border-radius;
+}
+
+.button {
+  background-color: $background;
+  border-radius: 0 $border-radius $border-radius 0;
+  height: 40px;
+  width: 40px;
+}
+
+.search-icon {
+  height: 20px;
+}

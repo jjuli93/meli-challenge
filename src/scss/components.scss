@@ -1,5 +1,7 @@
 @import 'variables/colors';
 
+@import 'variables/sizes';
+
 .full-width {
   width: 100%;
 }
@@ -10,4 +12,8 @@
 
 .quarter-width {
   width: 25%;
+}
+
+.container {
+  max-width: $max-container;
 }
