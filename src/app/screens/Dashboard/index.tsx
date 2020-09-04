@@ -6,17 +6,20 @@ import { home, searchList, productDetail } from '~components/Routes/paths';
 import Header from '~components/Header';
 
 import Home from './screens/Home';
+import SearchList from './screens/SearchList';
 
 function Dashboard() {
   return (
-    <>
+    <div className="column">
       <Header />
-      <Switch>
-        <RouteItem exact path={home} component={Home} />
-        <RouteItem exact path={searchList} component={Home} />
-        <RouteItem exact path={productDetail} component={Home} />
-      </Switch>
-    </>
+      <div className="container self-center full-width">
+        <Switch>
+          <RouteItem exact path={searchList} component={SearchList} />
+          <RouteItem exact path={productDetail} component={Home} />
+          <RouteItem exact path={home} component={Home} />
+        </Switch>
+      </div>
+    </div>
   );
 }
 

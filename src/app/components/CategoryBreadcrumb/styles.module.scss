@@ -1,0 +1,13 @@
+@import 'variables/colors';
+
+$margin: 10px;
+
+.category {
+  color: $secondary;
+  margin-right: $margin;
+
+  &:not(:last-child)::after {
+    content: '>';
+    margin-left: $margin;
+  }
+}

@@ -14,6 +14,12 @@
   width: 25%;
 }
 
+.full-height {
+  height: 100%;
+}
+
 .container {
   max-width: $max-container;
+  padding-left: 10px;
+  padding-right: 10px;
 }
