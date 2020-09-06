@@ -2,8 +2,11 @@
 
 @import 'variables/sizes';
 
+$image-max-width: 800px;
+
 .image {
-  flex: 0 2 800px;
+  border-radius: 4px;
+  flex: 0 2 $image-max-width;
   min-width: 250px;
   object-fit: cover;
   height: auto;
@@ -20,7 +23,7 @@
 }
 
 .description {
-  max-width: 680px;
+  max-width: $image-max-width;
   color: $secondary;
 }
 
