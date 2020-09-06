@@ -1,3 +1,8 @@
 export const home = '/';
 export const searchList = '/items';
-export const productDetail = `${searchList}/:id`;
+export const productDetail = {
+  path: `${searchList}/:id`,
+  params: {
+    id: ':id'
+  }
+};

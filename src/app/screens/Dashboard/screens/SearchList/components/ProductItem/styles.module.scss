@@ -1,0 +1,24 @@
+@import 'variables/colors';
+
+.image {
+  border-radius: 4px;
+  object-fit: cover;
+  height: 180px;
+  width: 180px;
+}
+
+.price {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.free-shipping-icon {
+  height: 18px;
+}
+
+.break {
+  height: 1px;
+  margin: auto;
+  width: 95%;
+  background-color: $background;
+}
