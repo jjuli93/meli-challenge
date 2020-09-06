@@ -7,6 +7,7 @@ import Header from '~components/Header';
 
 import Home from './screens/Home';
 import SearchList from './screens/SearchList';
+import ProductDetail from './screens/ProductDetail';
 
 function Dashboard() {
   return (
@@ -15,7 +16,7 @@ function Dashboard() {
       <div className="container self-center full-width">
         <Switch>
           <RouteItem exact path={searchList} component={SearchList} />
-          <RouteItem exact path={productDetail} component={Home} />
+          <RouteItem exact path={productDetail.path} component={ProductDetail} />
           <RouteItem exact path={home} component={Home} />
         </Switch>
       </div>

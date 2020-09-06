@@ -1,6 +1,6 @@
-export type currencyType = 'ars' | 'usd';
+export type CurrencyType = 'ars' | 'usd';
 
-export const getCurrencySymbol = (currency: currencyType) => {
+export const getCurrencySymbol = (currency: CurrencyType) => {
   switch (currency) {
     case 'ars':
       return '$';

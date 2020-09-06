@@ -1,3 +1,5 @@
+import { CurrencyType } from "~app/utils/currency";
+
 const mock = {
   data: {
     categories: ['tecnologia', 'computacion', 'procesadores'],
@@ -6,7 +8,7 @@ const mock = {
         id: 1,
         title: 'Intel core i7',
         price: {
-          currency: 'ars',
+          currency: 'ars' as CurrencyType,
           amount: 10000,
           decimals: 0
         },
@@ -19,7 +21,7 @@ const mock = {
         id: 2,
         title: 'Intel core i8',
         price: {
-          currency: 'ars',
+          currency: 'ars' as CurrencyType,
           amount: 12999,
           decimals: 99
         },
@@ -31,7 +33,7 @@ const mock = {
         id: 3,
         title: 'Ryzen 5',
         price: {
-          currency: 'ars',
+          currency: 'ars' as CurrencyType,
           amount: 20000,
           decimals: 0
         },
@@ -44,7 +46,7 @@ const mock = {
         id: 4,
         title: 'Ryzen 7',
         price: {
-          currency: 'usd',
+          currency: 'usd' as CurrencyType,
           amount: 1000,
           decimals: 0
         },

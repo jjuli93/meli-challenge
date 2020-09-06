@@ -1,10 +1,10 @@
-import { currencyType } from '~app/utils/currency';
+import { CurrencyType } from '~app/utils/currency';
 
 export interface Product {
   id: number;
   title: string;
   price: {
-    currency: currencyType;
+    currency: CurrencyType;
     amount: number;
     decimals: number;
   };
