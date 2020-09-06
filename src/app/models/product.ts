@@ -9,6 +9,22 @@ export interface Product {
     decimals: number;
   };
   picture: string;
-  condition: boolean;
+  condition: string;
   freeShipping: boolean;
+}
+
+export interface ProductDetail {
+  id: number;
+  title: string;
+  categories: string[];
+  price: {
+    currency: CurrencyType;
+    amount: number;
+    decimals: number;
+  };
+  picture: string;
+  condition: string;
+  freeShipping: boolean;
+  soldQuantity: number;
+  description: string;
 }

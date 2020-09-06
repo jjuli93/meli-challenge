@@ -21,11 +21,11 @@ function SearchBar({ onSearch }: Props) {
   };
 
   return (
-    <form className="row full-width" onSubmit={handleSubmit(handleSearch)}>
+    <form className="row item-1" onSubmit={handleSubmit(handleSearch)}>
       <input
         name="searchText"
         ref={register}
-        className={`item-1 p-4 ${styles.input}`}
+        className={`item-1 p-4 text-medium ${styles.input}`}
         type="text"
         autoFocus
         placeholder={i18next.t('SearchBar:placeholder') as string}

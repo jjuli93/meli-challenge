@@ -1,3 +1,13 @@
+.text-small {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.text-normal {
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .text-medium {
   font-size: 18px;
   line-height: 22px;
@@ -6,4 +16,22 @@
 .text-large {
   font-size: 24px;
   line-height: 30px;
+}
+
+.text-xlarge {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.text-xxxlarge {
+  font-size: 46px;
+  line-height: 52px;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
