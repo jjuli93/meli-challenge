@@ -1,8 +1,6 @@
-import { Price } from '~app/models/product';
+import { CurrencyType, Price } from '~app/models/product';
 
 import { formatNumber } from './numbers';
-
-export type CurrencyType = 'ars' | 'usd';
 
 export const getCurrencySymbol = (currency: CurrencyType) => {
   switch (currency) {

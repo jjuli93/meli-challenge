@@ -1,5 +1,7 @@
 @import 'variables/colors';
 
+@import 'variables/sizes';
+
 .image {
   border-radius: 4px;
   object-fit: contain;
@@ -21,4 +23,11 @@
   margin: auto;
   width: 95%;
   background-color: $background;
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
 }

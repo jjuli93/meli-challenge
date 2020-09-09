@@ -1,5 +1,4 @@
-import { CurrencyType } from '~app/utils/currency';
-
+export type CurrencyType = 'ars' | 'usd';
 export interface Price {
   currency: CurrencyType;
   amount: number;

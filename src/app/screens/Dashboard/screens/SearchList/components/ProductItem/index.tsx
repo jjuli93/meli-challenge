@@ -20,7 +20,7 @@ function ProductItem({ product, isLastItem }: Props) {
 
   return (
     <section>
-      <div className="row p-8">
+      <div className={`row p-8 ${styles.container}`}>
         <Link to={detailPath}>
           <img className={styles.image} src={picture} alt={title} />
         </Link>
