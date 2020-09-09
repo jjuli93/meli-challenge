@@ -29,7 +29,11 @@ function ProductInfo({ product }: Props) {
             </span>
             <span className="text-medium">{getDecimals(price.decimals)}</span>
           </p>
-          <button className="button primary full-width" type="button">
+          <button
+            className="button primary full-width"
+            type="button"
+            aria-label={i18next.t('ProductInfo:buy') as string}
+          >
             {i18next.t('ProductInfo:buy')}
           </button>
         </div>

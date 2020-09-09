@@ -31,8 +31,9 @@ function SearchBar({ onSearch, initialValue = '' }: Props) {
         autoFocus
         placeholder={i18next.t('SearchBar:placeholder') as string}
         defaultValue={initialValue}
+        aria-label={i18next.t('SearchBar:label') as string}
       />
-      <button className={styles.button} type="submit">
+      <button className={styles.button} type="submit" aria-label={i18next.t('SearchBar:label') as string}>
         <img className={styles.searchIcon} src={searchIcon} alt="" />
       </button>
     </form>
