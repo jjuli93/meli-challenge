@@ -13,7 +13,7 @@ function Dashboard() {
   return (
     <div className="column">
       <Header />
-      <div className="container self-center full-width">
+      <div className="container self-center full-width p-bottom-16">
         <Switch>
           <RouteItem exact path={searchList} component={SearchList} />
           <RouteItem exact path={productDetail.path} component={ProductDetail} />

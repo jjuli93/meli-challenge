@@ -1,3 +1,8 @@
+.text-xsmall {
+  font-size: 12px;
+  line-height: 14px;
+}
+
 .text-small {
   font-size: 14px;
   line-height: 18px;
@@ -34,4 +39,12 @@
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
 }

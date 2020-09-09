@@ -3,6 +3,7 @@ import { CurrencyType } from '~app/utils/currency';
 export interface Product {
   id: number;
   title: string;
+  city: string;
   price: {
     currency: CurrencyType;
     amount: number;

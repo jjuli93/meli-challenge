@@ -8,8 +8,9 @@ $image-max-width: 800px;
   border-radius: 4px;
   flex: 0 2 $image-max-width;
   min-width: 250px;
-  object-fit: cover;
+  object-fit: contain;
   height: auto;
+  max-height: 500px;
   width: 100%;
 }
 
@@ -35,6 +36,7 @@ $image-max-width: 800px;
   .image {
     flex: auto;
     margin-bottom: 32px;
+    max-height: 300px;
   }
 
   .heading {

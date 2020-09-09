@@ -7,13 +7,14 @@ import styles from './styles.module.scss';
 
 interface Props {
   onSearch: (searchText: string) => void;
+  initialValue?: string;
 }
 
 interface FormData {
   searchText: string;
 }
 
-function SearchBar({ onSearch }: Props) {
+function SearchBar({ onSearch, initialValue = '' }: Props) {
   const { register, handleSubmit } = useForm<FormData>();
 
   const handleSearch = (data: FormData) => {
@@ -29,6 +30,7 @@ function SearchBar({ onSearch }: Props) {
         type="text"
         autoFocus
         placeholder={i18next.t('SearchBar:placeholder') as string}
+        defaultValue={initialValue}
       />
       <button className={styles.button} type="submit">
         <img className={styles.searchIcon} src={searchIcon} alt="" />

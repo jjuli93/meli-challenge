@@ -27,8 +27,8 @@ function ProductItem({ product, isLastItem }: Props) {
         <Link to={detailPath}>
           <img className={styles.image} src={picture} alt={title} />
         </Link>
-        <div className="column p-8">
-          <div className="row middle m-bottom-8">
+        <div className="column p-8 item-1">
+          <div className="row middle">
             <p className="text-large m-right-3">
               {`${getCurrencySymbol(price.currency)}${formatNumber(totalPrice)}`}
             </p>
@@ -40,6 +40,7 @@ function ProductItem({ product, isLastItem }: Props) {
               />
             )}
           </div>
+          <p className="m-bottom-8 text-align-right text-xsmall">{product.city}</p>
           <Link to={detailPath}>
             <p className="text-medium">{product.title}</p>
           </Link>
