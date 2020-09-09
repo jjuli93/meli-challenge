@@ -7,6 +7,7 @@ import { getProducts } from '~app/services/products';
 import CategoryBreadcrumb from '~components/CategoryBreadcrumb';
 import { useRequest } from '~app/hooks/useRequest';
 import Loading from '~components/Spinner/loading';
+import ErrorHandler from '~components/ErrorHandler';
 
 import styles from './styles.module.scss';
 import ProductItem from './components/ProductItem';
@@ -26,6 +27,7 @@ function SearchList() {
   return (
     <>
       {loading && <Loading className="screen-center" />}
+      {error && <ErrorHandler error={error} />}
       {products && (
         <>
           <CategoryBreadcrumb categories={products.categories} />

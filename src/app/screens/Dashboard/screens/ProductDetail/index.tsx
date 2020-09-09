@@ -6,6 +6,7 @@ import { getProduct } from '~app/services/products';
 import CategoryBreadcrumb from '~components/CategoryBreadcrumb';
 import { useRequest } from '~app/hooks/useRequest';
 import Loading from '~components/Spinner/loading';
+import ErrorHandler from '~components/ErrorHandler';
 
 import ProductInfo from './components/ProductInfo';
 
@@ -22,6 +23,7 @@ function ProductDetail() {
   return (
     <>
       {loading && <Loading className="screen-center" />}
+      {error && <ErrorHandler error={error} />}
       {product && (
         <>
           <CategoryBreadcrumb categories={product.item.categories} />

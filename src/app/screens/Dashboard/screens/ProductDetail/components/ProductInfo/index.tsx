@@ -15,7 +15,7 @@ function ProductInfo({ product }: Props) {
   const { picture, condition, description, price, soldQuantity, title } = product;
 
   return (
-    <div className={`column p-16 ${styles.container}`}>
+    <section className={`column p-16 ${styles.container}`}>
       <div className={`row m-bottom-20 ${styles.header}`}>
         <img className={styles.image} src={picture} alt={title} />
         <div className={`column p-left-16 ${styles.heading}`}>
@@ -36,7 +36,7 @@ function ProductInfo({ product }: Props) {
       </div>
       <p className="text-xlarge m-bottom-8">{i18next.t('ProductInfo:description')}</p>
       <p className={`text-normal ${styles.description}`}>{description}</p>
-    </div>
+    </section>
   );
 }
 

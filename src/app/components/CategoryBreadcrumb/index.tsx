@@ -8,13 +8,13 @@ interface Props {
 
 function CategoryBreadcrumb({ categories }: Props) {
   return (
-    <div className="row wrap p-top-8 p-bottom-8">
+    <section className="row wrap p-top-8 p-bottom-8">
       {categories.map(category => (
         <p className={`text-small ${styles.category}`} key={category}>
           {category}
         </p>
       ))}
-    </div>
+    </section>
   );
 }
 
