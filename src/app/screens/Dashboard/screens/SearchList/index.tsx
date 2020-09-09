@@ -1,6 +1,8 @@
 import React from 'react';
 import { useLocation } from 'react-router';
 import { parse } from 'query-string';
+import { Helmet } from 'react-helmet';
+import i18next from 'i18next';
 
 import { QueryParamsKeys } from '~app/utils/queryParams';
 import { getProducts } from '~app/services/products';
@@ -26,6 +28,9 @@ function SearchList() {
 
   return (
     <>
+      <Helmet>
+        <title>{i18next.t('SearchList:title', { searchText })}</title>
+      </Helmet>
       {loading && <Loading className="screen-center" />}
       {error && <ErrorHandler error={error} />}
       {products && (

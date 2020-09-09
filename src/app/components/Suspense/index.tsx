@@ -3,12 +3,12 @@ import React, { Suspense } from 'react';
 import Loading from '../Spinner/loading';
 
 interface Props {
-  fallback?: React.ElementType;
+  Fallback?: React.ElementType;
   children: React.ReactNode;
 }
 
-function CustomSuspense({ fallback = Loading, children }: Props) {
-  return <Suspense fallback={fallback}>{children}</Suspense>;
+function CustomSuspense({ Fallback = Loading, children }: Props) {
+  return <Suspense fallback={<Fallback />}>{children}</Suspense>;
 }
 
 export default CustomSuspense;

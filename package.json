@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@types/react-helmet": "^6.1.0",
     "apisauce": "^1.1.2",
     "babel-plugin-module-resolver": "^3.2.0",
     "history": "^4.10.1",
@@ -12,6 +13,7 @@
     "query-string": "^6.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
     "react-hook-form": "^6.7.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",

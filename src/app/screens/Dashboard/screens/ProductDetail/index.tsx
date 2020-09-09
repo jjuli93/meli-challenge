@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router';
+import { Helmet } from 'react-helmet';
 
 import { ProductDetailParams } from '~components/Routes/paths';
 import { getProduct } from '~app/services/products';
@@ -26,6 +27,9 @@ function ProductDetail() {
       {error && <ErrorHandler error={error} />}
       {product && (
         <>
+          <Helmet>
+            <title>{product.item.title}</title>
+          </Helmet>
           <CategoryBreadcrumb categories={product.item.categories} />
           <ProductInfo product={product.item} />
         </>
