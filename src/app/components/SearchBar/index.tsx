@@ -25,7 +25,7 @@ function SearchBar({ onSearch, initialValue = '' }: Props) {
     <form className="row item-1" onSubmit={handleSubmit(handleSearch)}>
       <input
         name="searchText"
-        ref={register}
+        ref={register({ required: true })}
         className={`item-1 p-4 text-medium ${styles.input}`}
         type="text"
         autoFocus
