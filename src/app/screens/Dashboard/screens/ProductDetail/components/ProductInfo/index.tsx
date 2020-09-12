@@ -20,7 +20,8 @@ function ProductInfo({ product }: Props) {
         <img className={styles.image} src={picture} alt={title} />
         <div className={`column p-left-16 ${styles.heading}`}>
           <p className="text-small m-bottom-4">
-            {condition} - {i18next.t('ProductInfo:sold', { count: soldQuantity }) as string}
+            {i18next.t(`ProductInfo:${condition}`)} -{' '}
+            {i18next.t('ProductInfo:sold', { count: soldQuantity }) as string}
           </p>
           <p className="text-large m-bottom-8 bold">{title}</p>
           <p className="row m-bottom-8">

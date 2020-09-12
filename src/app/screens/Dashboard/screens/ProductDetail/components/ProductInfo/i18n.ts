@@ -5,5 +5,7 @@ i18next.addResources('es', 'ProductInfo', {
   sold: '{{count}} vendido',
   // eslint-disable-next-line @typescript-eslint/camelcase
   sold_plural: '{{count}} vendidos',
-  buy: 'Comprar'
+  buy: 'Comprar',
+  new: 'Nuevo',
+  used: 'Usado'
 });
