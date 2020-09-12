@@ -1,4 +1,4 @@
-export type CurrencyType = 'ars' | 'usd';
+export type CurrencyType = 'ARS' | 'USD';
 export interface Price {
   currency: CurrencyType;
   amount: number;

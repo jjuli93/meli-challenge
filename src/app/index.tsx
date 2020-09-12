@@ -13,7 +13,7 @@ function App() {
         <title>{i18next.t('General:appTitle')}</title>
         <meta name="description" content={i18next.t('General:description') as string} />
       </Helmet>
-      <Routes />;
+      <Routes />
     </>
   );
 }

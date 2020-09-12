@@ -16,7 +16,7 @@ function ProductDetail() {
   const [product, loading, error] = useRequest(
     {
       request: getProduct,
-      payload: parseInt(id)
+      payload: id
     },
     [id]
   );

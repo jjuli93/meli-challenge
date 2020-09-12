@@ -4,9 +4,9 @@ import { formatNumber } from './numbers';
 
 export const getCurrencySymbol = (currency: CurrencyType) => {
   switch (currency) {
-    case 'ars':
+    case 'ARS':
       return '$';
-    case 'usd':
+    case 'USD':
       return 'U$S';
     default:
       return '$';
