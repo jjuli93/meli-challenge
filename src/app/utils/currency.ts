@@ -17,6 +17,6 @@ export const getCurrencySymbol = (currency: CurrencyType) => {
 export const getDecimals = (decimal: number) => (decimal > 10 ? decimal.toString() : `0${decimal}`);
 
 export const formatTotalPrice = ({ amount, currency, decimals }: Price) => {
-  const integerPart = `${getCurrencySymbol(currency)}${formatNumber(amount)}`;
+  const integerPart = `${getCurrencySymbol(currency)} ${formatNumber(amount)}`;
   return decimals ? `${integerPart},${getDecimals(decimals)}` : integerPart;
 };

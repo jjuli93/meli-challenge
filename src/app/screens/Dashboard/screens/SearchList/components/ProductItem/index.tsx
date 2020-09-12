@@ -24,18 +24,19 @@ function ProductItem({ product, isLastItem }: Props) {
         <Link to={detailPath}>
           <img className={styles.image} src={picture} alt={title} />
         </Link>
-        <div className="column p-8 item-1">
+        <div className={`column p-8 item-1 ${styles.description}`}>
           <div className="row middle">
             <p className="text-large m-right-3">{formatTotalPrice(price)}</p>
             {freeShipping && (
               <img
                 className={styles.freeShippingIcon}
                 src={freeShipingIcon}
-                alt={i18next.t('SearchBar:placeholder') as string}
+                title={i18next.t('ProductItem:freeShippingAlt') as string}
+                alt={i18next.t('ProductItem:freeShippingAlt') as string}
               />
             )}
           </div>
-          <p className="m-bottom-5 text-align-right text-xsmall">{product.city}</p>
+          <p className={`m-bottom-5 self-end text-xsmall ${styles.city}`}>{product.city}</p>
           <Link to={detailPath}>
             <p className="text-medium">{product.title}</p>
           </Link>

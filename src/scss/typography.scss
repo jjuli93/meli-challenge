@@ -51,6 +51,10 @@
   text-align: right;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 
 @media screen and (max-width: $breakpoint-tablet) {
   :root {

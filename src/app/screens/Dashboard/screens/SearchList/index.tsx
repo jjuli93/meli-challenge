@@ -33,7 +33,7 @@ function SearchList() {
       </Helmet>
       {loading && <Loading className="screen-center" />}
       {error && <ErrorHandler error={error} />}
-      {!products?.items?.length && (
+      {products && !products?.items?.length && (
         <p className="row center p-top-10 text-xlarge">{i18next.t('SearchList:emptySearch')}</p>
       )}
       {!!products?.items?.length && (

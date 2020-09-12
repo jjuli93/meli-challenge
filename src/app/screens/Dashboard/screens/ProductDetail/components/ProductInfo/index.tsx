@@ -19,10 +19,10 @@ function ProductInfo({ product }: Props) {
       <div className={`row m-bottom-20 ${styles.header}`}>
         <img className={styles.image} src={picture} alt={title} />
         <div className={`column p-left-16 ${styles.heading}`}>
-          <p className="capitalize text-small m-bottom-4">
-            {condition} - {soldQuantity} {i18next.t('ProductInfo:sold') as string}
+          <p className="text-small m-bottom-4">
+            {condition} - {i18next.t('ProductInfo:sold', { count: soldQuantity }) as string}
           </p>
-          <p className="text-large m-bottom-8">{title}</p>
+          <p className="text-large m-bottom-8 bold">{title}</p>
           <p className="row m-bottom-8">
             <span className="text-xxxlarge text-nowrap">
               {getCurrencySymbol(price.currency)} {formatNumber(price.amount)}
