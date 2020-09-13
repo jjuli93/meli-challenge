@@ -8,7 +8,7 @@ interface GetProductsResponse {
   items: Product[];
 }
 export const getProducts = (searchText: string) =>
-  api.get<GetProductsResponse, ApiError>(productsBasePath, { search: searchText });
+  api.get<GetProductsResponse, ApiError>(productsBasePath, { q: searchText });
 
 interface GetProductResponse {
   item: ProductDetail;
