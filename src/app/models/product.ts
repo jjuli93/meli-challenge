@@ -16,14 +16,8 @@ export interface Product {
   freeShipping: boolean;
 }
 
-export interface ProductDetail {
-  id: number;
-  title: string;
+export interface ProductDetail extends Product {
   categories: string[];
-  price: Price;
-  picture: string;
-  condition: Condition;
-  freeShipping: boolean;
   soldQuantity: number;
   description: string;
 }
