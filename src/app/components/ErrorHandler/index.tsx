@@ -13,10 +13,10 @@ function ErrorHandler({ error }: Props) {
 
   switch (code) {
     case notFoundErrorCode:
-      return <p>Recurso no encontrado</p>;
+      return <p className="text-align-center text-large">Recurso no encontrado</p>;
 
     default:
-      return <p>Error</p>;
+      return <p className="text-align-center text-large">Error</p>;
   }
 }
 
